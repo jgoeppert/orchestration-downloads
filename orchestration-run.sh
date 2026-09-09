@@ -37,4 +37,8 @@ chmod 700 "$HELPER"
 echo "transport_run_id=${V[RUN_ID]}"
 echo "transport_repository=${V[REPOSITORY]}"
 echo "transport_prepared_sha=${V[PREPARED_SHA]}"
-exec bash "$HELPER" "${V[PREPARED_SHA]}"
+set +e
+bash "$HELPER" "${V[PREPARED_SHA]}"
+rc=$?
+set -e
+exit "$rc"
