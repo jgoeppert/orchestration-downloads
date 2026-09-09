@@ -1,0 +1,2 @@
+Run-ID: SHS_BTRAP_20260910T0027_69EC
+This companion note is informational only. Execute only the exact-SHA pinned orchestration-run.sh with the exact-SHA pinned manifest SHS_BTRAP_20260910T0027_69EC.txt.
