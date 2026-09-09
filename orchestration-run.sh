@@ -3,10 +3,10 @@ set -euo pipefail
 
 [[ $# -eq 1 ]] || { echo 'usage: orchestration-run.sh <exact manifest raw URL>' >&2; exit 64; }
 MANIFEST_URL="$1"
-[[ "$MANIFEST_URL" =~ ^https://raw\.githubusercontent\.com/jgoeppert/orchestration-downloads/[0-9a-f]{40}/runs/[A-Za-z0-9._-]+\.env$ ]] || { echo 'TRANSPORT FAIL: manifest URL must be exact-SHA pinned in jgoeppert/orchestration-downloads' >&2; exit 65; }
+[[ "$MANIFEST_URL" =~ ^https://raw\.githubusercontent\.com/jgoeppert/orchestration-downloads/[0-9a-f]{40}/runs/[A-Za-z0-9._-]+\.txt$ ]] || { echo 'TRANSPORT FAIL: manifest URL must be exact-SHA pinned in jgoeppert/orchestration-downloads' >&2; exit 65; }
 for cmd in wget git bash mktemp; do command -v "$cmd" >/dev/null 2>&1 || { echo "TRANSPORT FAIL: missing command $cmd" >&2; exit 66; }; done
 TMP="$(mktemp -d -t orchestration-transport.XXXXXX)"; trap 'rm -rf -- "$TMP" >/dev/null 2>&1 || true' EXIT
-MANIFEST="$TMP/manifest.env"; REPO="$TMP/repo"; HELPER="$TMP/helper.sh"
+MANIFEST="$TMP/manifest.txt"; REPO="$TMP/repo"; HELPER="$TMP/helper.sh"
 wget -qO "$MANIFEST" "$MANIFEST_URL"
 
 declare -A V=() SEEN=()
