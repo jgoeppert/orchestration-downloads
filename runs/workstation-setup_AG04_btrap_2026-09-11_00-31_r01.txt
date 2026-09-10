@@ -1,0 +1,6 @@
+VERSION=1
+RUN_ID=workstation-setup_AG04_btrap_2026-09-11_00-31_r01
+REPOSITORY=jgoeppert/workstation-setup
+PREPARED_BRANCH=tmp/btrap-workstation-setup-AG04-2026-09-11-00-31-r01
+PREPARED_SHA=cb89b29f9cd23487ea2a6dd21f04fb24a9d753e3
+HELPER_PATH=.orchestration/btrap/workstation-setup_AG04_btrap_2026-09-11_00-31_r01.sh
