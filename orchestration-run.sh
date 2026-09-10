@@ -19,7 +19,7 @@ while IFS='=' read -r key value extra || [[ -n "${key:-}" ]]; do
 done < "$MANIFEST"
 for key in VERSION RUN_ID REPOSITORY PREPARED_BRANCH PREPARED_SHA HELPER_PATH; do [[ -n "${V[$key]:-}" ]] || { echo "TRANSPORT FAIL: missing manifest key $key" >&2; exit 67; }; done
 [[ "${V[VERSION]}" == '1' ]] || { echo 'TRANSPORT FAIL: unsupported manifest version' >&2; exit 67; }
-[[ "${V[RUN_ID]}" =~ ^[A-Z0-9_]+$ ]] || { echo 'TRANSPORT FAIL: invalid Run-ID' >&2; exit 67; }
+[[ "${V[RUN_ID]}" =~ ^[A-Za-z0-9._+-]+$ ]] || { echo 'TRANSPORT FAIL: invalid Run-ID' >&2; exit 67; }
 [[ "${V[REPOSITORY]}" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]] || { echo 'TRANSPORT FAIL: invalid repository' >&2; exit 67; }
 [[ "${V[PREPARED_BRANCH]}" =~ ^[A-Za-z0-9._/-]+$ && "${V[PREPARED_BRANCH]}" != *'..'* ]] || { echo 'TRANSPORT FAIL: invalid prepared branch' >&2; exit 67; }
 [[ "${V[PREPARED_SHA]}" =~ ^[0-9a-f]{40}$ ]] || { echo 'TRANSPORT FAIL: invalid prepared SHA' >&2; exit 67; }
