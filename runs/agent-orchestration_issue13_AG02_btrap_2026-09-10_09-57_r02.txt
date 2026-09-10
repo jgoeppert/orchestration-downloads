@@ -1,0 +1,6 @@
+VERSION=1
+RUN_ID=agent-orchestration_issue13_AG02_btrap_2026-09-10_09-57_r02
+REPOSITORY=jgoeppert/agent-orchestration
+PREPARED_BRANCH=tmp/run-agent-orchestration_issue13_AG02_btrap_2026-09-10_09-57_r02
+PREPARED_SHA=9958d15c71e0587ed9ecb72f7c7caab089092194
+HELPER_PATH=.orchestration/btrap/agent-orchestration_issue13_AG02_btrap_2026-09-10_09-57_r02.sh
