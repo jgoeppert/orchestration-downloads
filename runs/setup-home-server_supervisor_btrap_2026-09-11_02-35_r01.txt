@@ -1,0 +1,6 @@
+VERSION=1
+RUN_ID=setup-home-server_supervisor_btrap_2026-09-11_02-35_r01
+REPOSITORY=jgoeppert/setup-home-server
+PREPARED_BRANCH=tmp/btrap-setup-home-server-supervisor-2026-09-11-02-35-r01
+PREPARED_SHA=d04532e75e8dd99249228d33cf9bfafb34f028df
+HELPER_PATH=.orchestration/btrap/setup-home-server_supervisor_btrap_2026-09-11_02-35_r01.sh
