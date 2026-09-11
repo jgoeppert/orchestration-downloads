@@ -1,0 +1,6 @@
+VERSION=1
+RUN_ID=workstation-setup_supervisor_btrap_2026-09-11_17-20_r02
+REPOSITORY=jgoeppert/workstation-setup
+PREPARED_BRANCH=orchestration/bootstrap-carrier
+PREPARED_SHA=78c29a07da66ba7300092bf378c759e4a68c8473
+HELPER_PATH=.orchestration/btrap/workstation-setup_supervisor_btrap_2026-09-11_17-20_r02.sh
