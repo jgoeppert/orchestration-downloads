@@ -1,0 +1,6 @@
+VERSION=1
+RUN_ID=home-server-data_supervisor_btrap_2026-09-13_06-59_r02
+REPOSITORY=jgoeppert/home-server-data
+PREPARED_BRANCH=tmp/run-home-server-data_supervisor_btrap_2026-09-13_06-59_r02
+PREPARED_SHA=9c42d72d96fb2e3c66f83ba223c0e50096372fc5
+HELPER_PATH=.orchestration/btrap/home-server-data_supervisor_btrap_2026-09-13_06-59_r02.sh
