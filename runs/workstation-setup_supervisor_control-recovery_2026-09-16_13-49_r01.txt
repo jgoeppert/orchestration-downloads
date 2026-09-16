@@ -2,5 +2,5 @@ VERSION=1
 RUN_ID=workstation-setup_supervisor_control-recovery_2026-09-16_13-49_r01
 REPOSITORY=jgoeppert/workstation-setup
 PREPARED_BRANCH=tmp/run-workstation-setup_supervisor_control-recovery_2026-09-16_13-49_r01
-PREPARED_SHA=d9ccfed44c914d17bc150552296fd1979ee2b41d
-HELPER_PATH=.orchestration/recovery/workstation-setup_supervisor_control-recovery_2026-09-16_13-49_r01.sh
+PREPARED_SHA=5b234c33338123a23c898d295b1c0c9f2803e9c7
+HELPER_PATH=.orchestration/btrap/workstation-setup_supervisor_control-recovery_2026-09-16_13-49_r01.sh
