@@ -1,0 +1,6 @@
+VERSION=1
+RUN_ID=workstation-setup_supervisor_btrap_2026-09-16_14-21_r01
+REPOSITORY=jgoeppert/workstation-setup
+PREPARED_BRANCH=tmp/run-workstation-setup_supervisor_btrap_2026-09-16_14-21_r01
+PREPARED_SHA=d1cecce94dc81f2ed8822dcffe81aa57c5d3a618
+HELPER_PATH=.orchestration/btrap/workstation-setup_supervisor_btrap_2026-09-16_14-21_r01.sh
