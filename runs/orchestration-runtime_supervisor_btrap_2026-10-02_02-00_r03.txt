@@ -1,0 +1,6 @@
+VERSION=1
+RUN_ID=orchestration-runtime_supervisor_btrap_2026-10-02_02-00_r03
+REPOSITORY=jgoeppert/orchestration-runtime
+PREPARED_BRANCH=tmp/run-orchestration-runtime_supervisor_btrap_2026-10-02_02-00_r03
+PREPARED_SHA=e9b1a697bccba133e1fcfede51d474b43dc49723
+HELPER_PATH=.orchestration/btrap/orchestration-runtime_supervisor_btrap_2026-10-02_02-00_r03.sh
